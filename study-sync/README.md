@@ -14,5 +14,6 @@ If somehow end up executing `docker run` again, make sure to remove existing con
 <pre>>> ${CONTAINER_ID} - would get that in the above step</pre>
 or 
 <h2>Change container name: </h2>
-<pre>>> docker run --env PORT=8080 --publish 8080:8080 --name ${container_name} -it study-sync:1.0</pre>
-Note: ${container_name} replace your desired name 
+<pre> >> docker run --env PORT=8080 --publish 8080:8080 --name ${container_name} -it study-sync:1.0 </pre>
+<pre>Note: ${container_name} replace your desired name </pre>
+</pre>If you are running docker in AWS Ec2: make sure to add INBOUND RULE in ec2 instance with <b>custom tcp</b> and <b>port 8080</b></pre>
